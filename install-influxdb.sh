@@ -19,5 +19,5 @@ rm -r influxdb-$INFLUXDB_VERSION-1/
 echo '4'
 cd -
 echo '5'
-influxd config > /etc/influxd/influx.conf
+sudo influxd config > /etc/influxd/influx.conf
 echo '6'
