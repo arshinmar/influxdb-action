@@ -13,11 +13,11 @@ wget -q $INFLUXDB_DOWNLOAD_PATH/influxdb-$INFLUXDB_VERSION-static_linux_amd64.ta
 echo '1'
 tar xvfz influxdb-$INFLUXDB_VERSION-static_linux_amd64.tar.gz
 echo '2'
-sudo cp influxdb-$INFLUXDB_VERSION-1/influxd /usr/local/bin/
+sudo cp influxdb-$INFLUXDB_VERSION-1/influxd /etc/influxd/
 echo '3'
 rm -r influxdb-$INFLUXDB_VERSION-1/
 echo '4'
 cd -
 echo '5'
-influxd config > /usr/local/bin/influx.conf
+influxd config > /etc/influxd/influx.conf
 echo '6'
